@@ -1,0 +1,126 @@
+import React from 'react';
+import { Card, CardContent } from '@/components/ui/card';
+import { User, Pencil, Target, Book } from 'lucide-react';
+
+const Portfolio = () => {
+  return (
+    <div className="max-w-6xl mx-auto px-4 py-8">
+      {/* Hero Section */}
+      <div className="text-center mb-16">
+        <h1 className="text-4xl font-bold mb-4">Crafting Words That Convert</h1>
+        <p className="text-xl text-gray-600 mb-8">Marketing graduate turned storyteller, helping brands find their voice</p>
+      </div>
+
+      {/* About Section */}
+      <section className="mb-16">
+        <Card className="p-6">
+          <CardContent>
+            <div className="flex items-center gap-4 mb-4">
+              <User className="h-6 w-6 text-blue-500" />
+              <h2 className="text-2xl font-semibold">About Me</h2>
+            </div>
+            <p className="text-gray-700 mb-4">
+              Marketing professional with a BSc from Nile University, specializing in creating compelling copy that drives engagement and converts. I combine data-driven insights with creative storytelling to help businesses connect with their audience.
+            </p>
+          </CardContent>
+        </Card>
+      </section>
+
+      {/* Services Section */}
+      <section className="mb-16">
+        <Card className="p-6">
+          <CardContent>
+            <div className="flex items-center gap-4 mb-4">
+              <Pencil className="h-6 w-6 text-blue-500" />
+              <h2 className="text-2xl font-semibold">Services</h2>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="p-4 border rounded-lg">
+                <h3 className="font-semibold mb-2">Website Copy</h3>
+                <p className="text-gray-600">Engaging, SEO-optimized content that tells your story and drives conversions</p>
+              </div>
+              <div className="p-4 border rounded-lg">
+                <h3 className="font-semibold mb-2">Email Campaigns</h3>
+                <p className="text-gray-600">Strategic email sequences that nurture leads and boost engagement</p>
+              </div>
+              <div className="p-4 border rounded-lg">
+                <h3 className="font-semibold mb-2">Brand Messaging</h3>
+                <p className="text-gray-600">Cohesive brand voice and messaging frameworks that resonate with your audience</p>
+              </div>
+              <div className="p-4 border rounded-lg">
+                <h3 className="font-semibold mb-2">Social Media Content</h3>
+                <p className="text-gray-600">Compelling social posts that build community and drive engagement</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
+
+      {/* Process Section */}
+      <section className="mb-16">
+        <Card className="p-6">
+          <CardContent>
+            <div className="flex items-center gap-4 mb-4">
+              <Target className="h-6 w-6 text-blue-500" />
+              <h2 className="text-2xl font-semibold">My Process</h2>
+            </div>
+            <div className="space-y-4">
+              <div className="flex gap-4">
+                <div className="w-8 h-8 rounded-full bg-blue-500 text-white flex items-center justify-center">1</div>
+                <div>
+                  <h3 className="font-semibold">Discovery</h3>
+                  <p className="text-gray-600">Deep dive into your business, goals, and target audience</p>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="w-8 h-8 rounded-full bg-blue-500 text-white flex items-center justify-center">2</div>
+                <div>
+                  <h3 className="font-semibold">Strategy</h3>
+                  <p className="text-gray-600">Develop a content strategy aligned with your objectives</p>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="w-8 h-8 rounded-full bg-blue-500 text-white flex items-center justify-center">3</div>
+                <div>
+                  <h3 className="font-semibold">Creation</h3>
+                  <p className="text-gray-600">Craft compelling copy that engages and converts</p>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="w-8 h-8 rounded-full bg-blue-500 text-white flex items-center justify-center">4</div>
+                <div>
+                  <h3 className="font-semibold">Refinement</h3>
+                  <p className="text-gray-600">Collaborate on revisions until we achieve perfection</p>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
+
+      {/* Education Section */}
+      <section>
+        <Card className="p-6">
+          <CardContent>
+            <div className="flex items-center gap-4 mb-4">
+              <Book className="h-6 w-6 text-blue-500" />
+              <h2 className="text-2xl font-semibold">Education</h2>
+            </div>
+            <div className="mb-4">
+              <h3 className="font-semibold">BSc in Marketing</h3>
+              <p className="text-gray-600">Nile University of Nigeria</p>
+              <p className="text-gray-500">2020 - 2024</p>
+              <ul className="list-disc ml-6 mt-2 text-gray-600">
+                <li>Specialized in Digital Marketing and Brand Communications</li>
+                <li>Completed projects in Consumer Psychology and Market Research</li>
+                <li>Developed expertise in Strategic Brand Management</li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
+    </div>
+  );
+};
+
+export default Portfolio;
